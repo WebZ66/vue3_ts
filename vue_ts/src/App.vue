@@ -1,11 +1,12 @@
 <template>
   <div>
-    <A v-move:aaa.xiaoman="{ background: 'red' }" />
+    <Drag />
   </div>
 </template>
 
 <script setup lang="ts">
 import A from './components/directive/A.vue'
+import Drag from './components/directive/drag.vue'
 import { ref, reactive, computed, DirectiveBinding, Directive } from 'vue'
 const vMove: Directive = {
   created() {
